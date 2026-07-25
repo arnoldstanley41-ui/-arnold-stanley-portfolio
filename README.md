@@ -1,3 +1,6 @@
-# Arnold Stanley Portfolio — Version 20
+# Arnold Stanley Portfolio — Version 22
 
-Version 20 adds concise explanatory summaries beneath every paper listed in the “Research Presented Across Jurisdictions” section. All other Version 19 content, links, layout, and styling remain intact.
+Version 22:
+- slightly enlarges the opening name on desktop and mobile;
+- capitalises the initials in “Arnold Stanley”;
+- retains all other Version 21 content, links, layout, and styling.
