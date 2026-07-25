@@ -497,3 +497,31 @@
     line-height: 1.75 !important;
   }
 }
+
+
+/* Version 20: explanatory summaries for research presentations */
+.speaking-list .presentation-context {
+  margin-bottom: 12px;
+  color: #d0cbc3;
+  font-size: 1.02rem;
+  line-height: 1.72;
+}
+.speaking-list .presentation-summary {
+  max-width: 900px;
+  margin-top: 0;
+  color: #aaa59d;
+  font-size: 1.01rem;
+  line-height: 1.8;
+}
+.speaking-list article {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (max-width: 650px) {
+  .speaking-list .presentation-context,
+  .speaking-list .presentation-summary {
+    font-size: .96rem;
+    line-height: 1.72;
+  }
+}

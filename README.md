@@ -1,3 +1,3 @@
-# Arnold Stanley Portfolio — Version 19
+# Arnold Stanley Portfolio — Version 20
 
-Version 19 replaces the previous event-page link for “Judicial Intervention in ADR — A Paradigm of Change or Intervention?” with the direct Alliance University ACADR newsletter PDF containing the paper. All other Version 18 content and styling remain unchanged.
+Version 20 adds concise explanatory summaries beneath every paper listed in the “Research Presented Across Jurisdictions” section. All other Version 19 content, links, layout, and styling remain intact.
