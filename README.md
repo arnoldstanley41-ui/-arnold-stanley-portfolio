@@ -1,7 +1,11 @@
-# Arnold Stanley Portfolio — Version 25
+# Arnold Stanley Portfolio — Version 27
 
-Version 25:
-- removes the SQE1 Preparation Through QLTS entry;
-- changes the Class XII result line to “Grade: 94%; CGPA 9.6/10; Distinction.”;
-- changes the Class X result line to “Grade: 83%; CGPA 8.6/10; First Division.”;
-- retains all other Version 24 content, links, favicon, sitemap, layout, and styling.
+Version 27 retains all Version 26 content, links, favicon files, sitemap, layout, and styling while reducing browser painting and memory load.
+
+Optimisations:
+- removed the fixed SVG grain overlay;
+- removed the associated mix-blend mode;
+- replaced the blurred architectural glow with a normal radial gradient;
+- simplified the decorative architectural background on tablets and phones;
+- added content-visibility and intrinsic-size containment to sections below the hero;
+- retained the animation-free behaviour introduced earlier.
