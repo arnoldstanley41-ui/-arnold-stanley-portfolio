@@ -1,11 +1,12 @@
-# Arnold Stanley Portfolio — Version 27
+# Arnold Stanley Portfolio — Version 28
 
-Version 27 retains all Version 26 content, links, favicon files, sitemap, layout, and styling while reducing browser painting and memory load.
+Version 28 is a stability-focused revision of Version 27.
 
-Optimisations:
-- removed the fixed SVG grain overlay;
-- removed the associated mix-blend mode;
-- replaced the blurred architectural glow with a normal radial gradient;
-- simplified the decorative architectural background on tablets and phones;
-- added content-visibility and intrinsic-size containment to sections below the hero;
-- retained the animation-free behaviour introduced earlier.
+Changes:
+- removes `content-visibility: auto` and intrinsic-size containment so the full page renders normally;
+- keeps the grain overlay, mix-blend mode, and blur filter removed;
+- hides the decorative architectural hero background on phones and tablets;
+- adds page-show and tab-visibility safeguards that restore all content to a visible state;
+- cache-busts CSS and JavaScript with Version 28 query strings;
+- adds a Netlify `_headers` file requiring revalidation of HTML, CSS, and JavaScript;
+- retains all Version 27 content, links, favicon files, sitemap, and desktop design.

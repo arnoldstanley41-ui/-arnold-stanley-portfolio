@@ -3,6 +3,26 @@
     element.classList.add('visible');
   });
 
+
+  const restoreVisibleState = () => {
+    document.querySelectorAll('.reveal').forEach((element) => {
+      element.classList.add('visible');
+      element.style.opacity = '1';
+      element.style.visibility = 'visible';
+      element.style.transform = 'none';
+    });
+  };
+
+  window.addEventListener('pageshow', () => {
+    requestAnimationFrame(restoreVisibleState);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) {
+      requestAnimationFrame(restoreVisibleState);
+    }
+  });
+
   const publications = [...document.querySelectorAll('.publication')];
   const count = document.getElementById('publication-count');
   const previousButton = document.getElementById('previous-publication');

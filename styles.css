@@ -592,75 +592,28 @@ html {
 }
 
 
-/* Version 27: rendering and memory optimisation */
+/* Version 28: tab-restoration stability */
 
-/* Sections below the first screen are rendered only when needed. */
-main > section:not(.hero) {
-  content-visibility: auto;
-  contain-intrinsic-size: auto 900px;
-}
-
-/* Keep the opening screen fully available and immediately painted. */
-.hero {
+/* Render the complete document normally. */
+main > section {
   content-visibility: visible;
   contain: none;
 }
 
-/* Simplify the decorative architectural scene on smaller screens. */
+/* Avoid repainting the decorative architectural scene on phones/tablets. */
 @media (max-width: 900px) {
   .hero-architecture {
-    opacity: .27;
-  }
-
-  .arch-glow {
-    right: 0;
-    top: 8%;
-    width: 72%;
-    height: 64%;
-    background: radial-gradient(
-      ellipse at 70% 35%,
-      rgba(199, 155, 69, .14) 0%,
-      rgba(83, 58, 28, .07) 42%,
-      transparent 72%
-    );
-  }
-
-  .columns {
-    right: -2%;
-    top: 11%;
-    width: 54%;
-    height: 56%;
-    gap: 8%;
-  }
-
-  .columns span {
-    width: 18%;
-    box-shadow: 0 0 0 1px rgba(255, 215, 140, .08);
-  }
-
-  .columns span:nth-child(4),
-  .columns span:nth-child(5),
-  .steps,
-  .diagonal-stripes {
-    display: none;
+    display: none !important;
   }
 }
 
-@media (max-width: 650px) {
-  main > section:not(.hero) {
-    contain-intrinsic-size: auto 760px;
-  }
-
-  .hero-architecture {
-    opacity: .2;
-  }
-
-  .columns {
-    right: -8%;
-    width: 48%;
-  }
-
-  .columns span:nth-child(3) {
-    display: none;
-  }
+/* Ensure every previously animated block is always painted. */
+.reveal,
+.reveal.visible,
+.reveal-animations .reveal,
+.reveal-animations .reveal.visible {
+  display: block;
+  opacity: 1 !important;
+  visibility: visible !important;
+  transform: none !important;
 }
