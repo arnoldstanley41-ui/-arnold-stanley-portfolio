@@ -543,3 +543,50 @@
     line-height: .96;
   }
 }
+
+
+/* Version 23: reliable content visibility */
+.reveal {
+  opacity: 1;
+  transform: none;
+}
+.reveal-animations .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition: opacity .7s ease, transform .7s ease;
+}
+.reveal-animations .reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+
+/* Version 24: animations removed throughout the website */
+html {
+  scroll-behavior: auto !important;
+}
+
+*,
+*::before,
+*::after {
+  animation: none !important;
+  transition: none !important;
+}
+
+.reveal,
+.reveal.visible,
+.reveal-animations .reveal,
+.reveal-animations .reveal.visible {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.hero-copy,
+.hero-copy *,
+.publication,
+.publication.active,
+.primary-nav,
+.primary-nav.open {
+  animation: none !important;
+  transition: none !important;
+}
