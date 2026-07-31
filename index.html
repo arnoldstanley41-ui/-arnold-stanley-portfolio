@@ -882,6 +882,93 @@ main > section:not(.hero) {
   }
 }
 
+
+
+/* Version 37: desktop-style gold architectural background on mobile */
+@media (max-width: 900px) {
+  /* Keep the same CSS-only gold architecture used on desktop. */
+  .hero-architecture {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    overflow: hidden !important;
+    opacity: .40 !important;
+    z-index: 0 !important;
+    pointer-events: none !important;
+  }
+
+  .hero-architecture .arch-glow {
+    display: block !important;
+    right: -8% !important;
+    top: 7% !important;
+    width: 84% !important;
+    height: 78% !important;
+  }
+
+  .hero-architecture .columns {
+    display: flex !important;
+    right: -19% !important;
+    top: 8% !important;
+    width: 76% !important;
+    height: 66% !important;
+    gap: 4.4% !important;
+    align-items: flex-end !important;
+  }
+
+  .hero-architecture .steps {
+    display: block !important;
+    right: -14% !important;
+    bottom: 3% !important;
+    width: 89% !important;
+    height: 38% !important;
+  }
+
+  .hero-architecture .diagonal-stripes {
+    display: block !important;
+    left: auto !important;
+    right: 3vw !important;
+    top: 8% !important;
+    width: 31% !important;
+    height: 49% !important;
+    opacity: .48 !important;
+  }
+
+  /* Keep the foreground fully readable above the decorative layer. */
+  .hero-copy {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-architecture {
+    opacity: .34 !important;
+  }
+
+  .hero-architecture .arch-glow {
+    right: -20% !important;
+    width: 105% !important;
+  }
+
+  .hero-architecture .columns {
+    right: -32% !important;
+    width: 94% !important;
+    height: 63% !important;
+  }
+
+  .hero-architecture .steps {
+    right: -24% !important;
+    width: 108% !important;
+    height: 34% !important;
+  }
+
+  .hero-architecture .diagonal-stripes {
+    right: 1vw !important;
+    width: 39% !important;
+    height: 46% !important;
+  }
+}
+
 </style>
 <link href="https://arnoldstanley.in/" rel="canonical"/></head>
 <body>

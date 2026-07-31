@@ -1,14 +1,12 @@
-# Arnold Stanley Portfolio — Version 36
+# Arnold Stanley Portfolio — Version 37
 
-Version 36 is built directly from Version 35.
+Version 37 is built directly from Version 36.
 
-Changes:
-- enlarged the handwritten signature on desktop;
-- enlarged the handwritten signature on mobile;
-- positioned the signature immediately beneath the name with virtually no gap;
-- removed the redundant empty signature wrapper;
-- retained all Version 35 content, links, sitemap, redirects, favicon, layout, and black-and-gold design;
-- kept the page free of entrance animations or script-dependent visibility so the opening content renders immediately.
+Change made:
+- restored the full desktop-style gold architectural hero background on mobile and tablet screens;
+- retained the Version 36 signature size, position, content, links, favicon, sitemap, redirects, layout, and black-and-gold design;
+- kept the background entirely CSS-based, with no new image, font, script, animation, or network dependency;
+- kept all visible content available immediately without animation-dependent loading.
 
 Deployment:
-Upload the contents of this folder to the root of the existing GitHub repository. Netlify will deploy `index.html` from the repository root.
+Upload all seven files from this folder together to the root of the existing GitHub repository. Replace the existing files with these exact names. Netlify will deploy `index.html` from the repository root.
