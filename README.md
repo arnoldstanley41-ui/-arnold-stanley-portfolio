@@ -1,14 +1,14 @@
-# Arnold Stanley Portfolio — Version 42
+# Arnold Stanley Portfolio — Version 43
 
-Version 42 is built directly from Version 41.
+Version 43 is built directly from Version 42.
 
 Changes made:
-- added the dates April — June 2026 to the Invited Reviewer — IGI Global Project entry;
-- capitalised “Publication” in the Academic Publication work heading;
-- retained the Senior Editor position at IE International Policy Review, IE University, under Academic Publication work;
+- capitalised “Work” in the Academic Publication Work heading;
+- retained the April — June 2026 dates for the Invited Reviewer — IGI Global Project entry;
+- retained the Senior Editor position at IE International Policy Review, IE University, under Academic Publication Work;
 - retained Junior Research Analyst at Atlantis Capital Research under Professional Experience, covering the Legal & Compliance and Government & Public Sector research lines;
 - retained the removal of the IJALR migrant-labour publication;
-- retained all other Version 41 content, links, signature size and position, favicon, sitemap, redirects, layout, and black-and-gold design;
+- retained all other Version 42 content, links, signature size and position, favicon, sitemap, redirects, layout, and black-and-gold design;
 - retained the seven-file deployment structure and single `favicon-48.png` setup;
 - retained the cache-clearing service worker and Netlify caching configuration used to reduce stale or partially loaded page versions;
 - kept the mobile gold hero background lightweight and CSS-based;
