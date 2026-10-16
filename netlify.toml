@@ -1,13 +1,19 @@
 [[headers]]
   for = "/"
   [headers.values]
-    Cache-Control = "public, max-age=300, stale-while-revalidate=86400"
-    Netlify-CDN-Cache-Control = "public, s-maxage=3600, stale-while-revalidate=86400"
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Netlify-CDN-Cache-Control = "public, s-maxage=0, must-revalidate"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+    Netlify-CDN-Cache-Control = "public, s-maxage=0, must-revalidate"
 
 [[headers]]
   for = "/favicon*"
   [headers.values]
-    Cache-Control = "public, max-age=86400"
+    Cache-Control = "public, max-age=604800, immutable"
 
 [[redirects]]
   from = "/education/*"

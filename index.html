@@ -969,6 +969,49 @@ main > section:not(.hero) {
   }
 }
 
+
+
+/* Version 40: Version 37 base with stable mobile rendering */
+@media (max-width: 900px) {
+  /* Keep the black-and-gold mobile hero while avoiding the costly multi-element
+     desktop architectural scene on smaller devices. */
+  .hero-architecture {
+    display: block !important;
+    position: absolute !important;
+    inset: 0 !important;
+    z-index: 0 !important;
+    opacity: 1 !important;
+    overflow: hidden !important;
+    pointer-events: none !important;
+    background:
+      radial-gradient(ellipse at 86% 31%, rgba(230,197,123,.20) 0%, rgba(199,155,69,.10) 25%, transparent 58%),
+      repeating-linear-gradient(90deg, transparent 0 34px, rgba(199,155,69,.13) 35px 39px, rgba(7,9,10,.10) 40px 47px),
+      linear-gradient(158deg, transparent 0 59%, rgba(199,155,69,.07) 60%, rgba(7,9,10,.78) 77%, #07090a 100%);
+    background-position: center, right -8vw top 12%, center;
+    background-size: 100% 100%, 66% 63%, 100% 100%;
+    background-repeat: no-repeat;
+  }
+
+  .hero-architecture .arch-glow,
+  .hero-architecture .columns,
+  .hero-architecture .steps,
+  .hero-architecture .diagonal-stripes {
+    display: none !important;
+  }
+
+  .hero-copy {
+    position: relative !important;
+    z-index: 2 !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-architecture {
+    background-position: center, right -20vw top 12%, center;
+    background-size: 100% 100%, 82% 61%, 100% 100%;
+  }
+}
+
 </style>
 <link href="https://arnoldstanley.in/" rel="canonical"/></head>
 <body>
@@ -1120,6 +1163,19 @@ main > section:not(.hero) {
 <div><p class="eyebrow">Experience</p><h2>Research, editorial work, and legal training.</h2></div>
 </div>
 <div class="timeline-group">
+<div class="subsection-heading"><p class="eyebrow">Current Roles</p><h3>Professional Experience</h3></div>
+<div class="vertical-timeline experience-timeline">
+<article class="timeline-entry featured-entry">
+<div class="timeline-marker"></div><div class="timeline-date">September 2026 — Present</div>
+<div class="timeline-content"><p class="entry-label">Research &amp; Analysis</p><h3>Junior Research Analyst</h3><p class="entry-org">Atlantis Capital Research</p><p class="experience-description">My work spans the <strong>Legal &amp; Compliance</strong> and <strong>Government &amp; Public Sector</strong> research lines, with a focus on legal and regulatory developments, compliance frameworks, governance, and public-sector policy. I research and analyse relevant developments and contribute written analysis to the organisation’s research outputs.</p></div>
+</article>
+<article class="timeline-entry featured-entry">
+<div class="timeline-marker"></div><div class="timeline-date">September 2026 — Present</div>
+<div class="timeline-content"><p class="entry-label">Editorial &amp; Research</p><h3>Senior Editor</h3><p class="entry-org">IE International Policy Review, IE University · Community of Madrid, Spain</p><p class="experience-description">As Senior Editor for the <strong>Bocconi Advocacy &amp; Litigation Collaboration</strong>, I work on research focused on <strong>Venture Capital &amp; Start-Ups</strong>. My role includes reviewing papers for legal and factual accuracy, analytical rigour, structure, argumentation, and editorial quality, while guiding authors through the revision and editing process.</p></div>
+</article>
+</div>
+</div>
+<div class="timeline-group">
 <div class="subsection-heading"><p class="eyebrow">Fellowship</p><h3>Research Fellowship</h3></div>
 <div class="vertical-timeline experience-timeline">
 <article class="timeline-entry featured-entry">
@@ -1153,7 +1209,6 @@ main > section:not(.hero) {
 <li><div class="publication-title-wrap"><a href="https://www.cambridge.org/engage/coe/article-details/643d26411d262d40eaa1e05b" rel="noopener" target="_blank"><h4>The Future of Arbitration in Intellectual Property Disputes — An Opportunity for India’s Growth and Resilience <span class="external-arrow">↗</span></h4></a><p class="publication-source">Cambridge Open Engage, Cambridge University Press · Working Paper</p><p class="publication-synopsis">This working paper examines arbitration as a mechanism for resolving intellectual-property disputes in India. It considers how specialist procedure, confidentiality, and enforceability could support innovation while reducing pressure on conventional courts.</p></div><span>2023</span></li>
 <li><div><a href="https://ijlmh.com/paper/liability-of-artificial-intelligence-in-air-and-space-law-an-emerging-paradigm-in-the-realm-of-international-law/" rel="noopener" target="_blank"><h4>Liability of Artificial Intelligence in Air and Space Law: An Emerging Paradigm in the Realm of International Law <span class="external-arrow">↗</span></h4></a><p class="publication-source">International Journal of Law Management and Humanities (IJLMH)</p><p class="publication-synopsis">The article considers responsibility when autonomous systems operate in legally complex air and space environments. It evaluates human programming, oversight, and the capacity of existing international-law principles to allocate liability.</p></div><span>2023</span></li>
 <li><div><a href="https://lawinbusiness.vse.cz/wp-content/uploads/page/8/LawInBusiness2022_final_2.pdf" rel="noopener" target="_blank"><h4>A Step in the Right Direction: The Issue of Extraterritoriality in the Landscape of Deutschland’s Competition Law and Policy <span class="external-arrow">↗</span></h4></a><p class="publication-source">Prague University of Economics and Business</p><p class="publication-synopsis">This co-authored paper studies the extraterritorial reach of German competition law in relation to European Union rules and public international law. It analyses the effects principle, choice-of-law concerns, and the value of multilateral cooperation.</p></div><span>2022</span></li>
-<li><div><a href="https://ijalr.in/volume-3-issue-3-2023/migrant-labour-crises-in-india-the-exodus-of-migrant-workers-vs-the-indian-labour-code-arnold-stanley/" rel="noopener" target="_blank"><h4>Migrant Labour Crises in India — The Exodus of Migrant Workers v. the Indian Labour Code <span class="external-arrow">↗</span></h4></a><p class="publication-source">International Journal of Advanced Legal Research (IJALR)</p><p class="publication-synopsis">The article studies the vulnerabilities exposed by the mass movement of migrant workers during the pandemic. It assesses labour-law protections and asks whether India’s evolving labour codes adequately address mobility, welfare, and enforcement gaps.</p></div><span>2023</span></li>
 <li><div><a href="https://www.alliance.edu.in/committees/ACADR/assets/publication/ACADR-Newsletter-Vol01-Issue03.pdf" rel="noopener" target="_blank"><h4>Judicial Intervention in ADR — A Paradigm of Change or Intervention? <span class="external-arrow">↗</span></h4></a><p class="publication-source">Alliance Centre for Alternative Dispute Resolution, Alliance University</p><p class="publication-synopsis">This essay examines the boundary between necessary judicial support and excessive court involvement in alternative dispute resolution. It considers how intervention can protect fairness while preserving efficiency, finality, and party autonomy.</p></div><span>2022</span></li>
 <li><div><a href="https://law.unimelb.edu.au/centres/alc/news-and-events/legal-cooperation%2C-harmonization-and-unification-an-asean-perspective-online-conference/papers" rel="noopener" target="_blank"><h4>ASEAN and the COVID-19 Pandemic: A Wake-Up Call for Reimagining the Framework for Global Health Cooperation <span class="external-arrow">↗</span></h4></a><p class="publication-source">Asian Law Centre, Melbourne Law School, University of Melbourne</p><p class="publication-synopsis">The paper considers how the pandemic exposed weaknesses in regional and global-health coordination. It argues for stronger legal cooperation, institutional harmonisation, and collective mechanisms for responding to transnational health emergencies.</p></div><span>2022</span></li>
 <li><div><a href="https://pgclclprs.wordpress.com/marital-rape-in-india-a-deliberate-action-of-non-criminalization/" rel="noopener" target="_blank"><h4>Marital Rape in India — A Deliberate Action of Non-Criminalization? <span class="external-arrow">↗</span></h4></a><p class="publication-source">Constitutional Law and Policy Reform Society, Pravin Gandhi College of Law</p><p class="publication-synopsis">The essay examines the marital-rape exception through constitutional equality, bodily autonomy, dignity, and consent. It challenges the legal distinction between sexual violence within and outside marriage and argues for rights-centred reform.</p></div><span>2022</span></li>
