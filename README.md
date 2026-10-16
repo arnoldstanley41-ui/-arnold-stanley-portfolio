@@ -1,20 +1,19 @@
-# Arnold Stanley Portfolio — Version 40
+# Arnold Stanley Portfolio — Version 42
 
-Version 40 is built directly from the Version 37 seven-file website structure.
+Version 42 is built directly from Version 41.
 
-Content changes:
-- added a Professional Experience subsection under Experience;
-- added Junior Research Analyst at Atlantis Capital Research, covering the Legal & Compliance and Government & Public Sector research lines;
-- added Senior Editor at IE International Policy Review, IE University, for the Bocconi Advocacy & Litigation Collaboration focused on Venture Capital & Start-Ups;
-- removed the IJALR migrant-labour publication;
-- retained all other Version 37 content and design.
-
-Stability changes:
-- retained the seven-file deployment structure and single PNG favicon used in Version 37;
-- retained the cache-clearing service worker;
-- set HTML to revalidate on deployment so stale page versions are not held by the browser/CDN;
-- kept the mobile black-and-gold hero but replaced the costly multi-element architectural scene on small screens with a lightweight CSS background;
-- no entrance animations, external fonts, or additional favicon files were added.
+Changes made:
+- added the dates April — June 2026 to the Invited Reviewer — IGI Global Project entry;
+- capitalised “Publication” in the Academic Publication work heading;
+- retained the Senior Editor position at IE International Policy Review, IE University, under Academic Publication work;
+- retained Junior Research Analyst at Atlantis Capital Research under Professional Experience, covering the Legal & Compliance and Government & Public Sector research lines;
+- retained the removal of the IJALR migrant-labour publication;
+- retained all other Version 41 content, links, signature size and position, favicon, sitemap, redirects, layout, and black-and-gold design;
+- retained the seven-file deployment structure and single `favicon-48.png` setup;
+- retained the cache-clearing service worker and Netlify caching configuration used to reduce stale or partially loaded page versions;
+- kept the mobile gold hero background lightweight and CSS-based;
+- added no external fonts, entrance animations, additional favicon files, or new network dependencies;
+- kept all visible content available immediately without animation-dependent loading.
 
 Deployment:
-Upload the seven files in this folder to the root of the existing GitHub repository. Netlify will deploy index.html from the repository root.
+Upload the seven files from this folder to the root of the existing GitHub repository and replace the existing files with these exact names. Netlify will deploy `index.html` from the repository root.
